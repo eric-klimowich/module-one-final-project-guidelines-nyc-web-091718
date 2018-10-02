@@ -2,7 +2,7 @@ class CreateCategories < ActiveRecord::Migration[5.0]
   def change
     create_table :categories do |t|
       t.string :name
-      t.string :question
+      t.string :question_bank
     end
   end #end of method
 end #end of class
