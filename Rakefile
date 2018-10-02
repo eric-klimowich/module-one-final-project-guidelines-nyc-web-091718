@@ -6,3 +6,11 @@ task :console do
   ActiveRecord::Base.logger = Logger.new(STDOUT)
   Pry.start
 end
+
+# desc 'initiate run.rb'
+#
+# task _____ do
+#
+# #TODO - create method to run.rb inside of app folder
+#
+# end
