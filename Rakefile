@@ -7,6 +7,11 @@ task :console do
   Pry.start
 end
 
+# desc 'migrate'
+# task :migrate do
+#   puts "hello"
+# end
+
 # desc 'initiate run.rb'
 #
 # task _____ do
