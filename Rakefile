@@ -1,23 +1,24 @@
 require_relative 'config/environment'
 require 'sinatra/activerecord/rake'
+require 'pry'
+require 'rake'
 
+ # binding.pry
 namespace :db do
-desc 'starts a console'
-task :console do
-  ActiveRecord::Base.logger = Logger.new(STDOUT)
-  Pry.start
-end
-end
+  desc 'starts a console'
+  task :console do
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+    Pry.start
+  end
 
-# desc 'migrate'
-# task :migrate do
-#   puts "hello"
-# end
+  desc 'seed the database with some dummy data'
+    task :seed do
+      binding.pry
+      require_relative './db/seeds.rb'
+    end
 
-# desc 'initiate run.rb'
-#
-# task _____ do
-#
-# #TODO - create method to run.rb inside of app folder
-#
-# end
+  desc 'runs the program'
+    task :start do
+      run_program
+    end
+  end # end of namespace
