@@ -1,5 +1,5 @@
 
-require_relative 'api_communicator.rb'
+require_relative 'api.rb'
 require_relative 'cli.rb'
 require 'pry'
 # require_relative ""
