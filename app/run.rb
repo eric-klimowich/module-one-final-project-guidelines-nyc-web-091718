@@ -8,7 +8,7 @@ require 'pry'
 def run_program
   welcome
   get_category
-  ask_question("Planets")
+  ask_question("People")
 end
 
 # character = get_character_from_user
